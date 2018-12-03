@@ -2,7 +2,7 @@ import java.sql.*;
 import jva.util.Scanner;
 
 class MyClass {
-	public static void main(String args[]) {Statement statement;
+	public static void main(String args[]) {/*Statement statement;
         Connection conn = null;
 
         try {
@@ -17,5 +17,5 @@ class MyClass {
                
         } catch(Exception e) {
             System.out.println(e);
-        }
+        }*/
     }
