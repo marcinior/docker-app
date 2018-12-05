@@ -1,7 +1,7 @@
 import java.sql.*;
 import java.util.Scanner;
  
-class MyClass {
+class MySql {
     public static void main(String args[]) {
  
         Statement statement;
