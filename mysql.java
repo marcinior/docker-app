@@ -9,7 +9,7 @@ class MySql {
  
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/myDB", "mbobel", "password");
+            connection = DriverManager.getConnection("jdbc:mysql://10.0.10.3:3306/myDB", "mbobel", "password");
  
             String createTable = "CREATE TABLE IF NOT EXISTS cars (brand VARCHAR(20), model VARCHAR(20), color VARCHAR(20))";
  
