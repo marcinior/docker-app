@@ -9,7 +9,6 @@ class MySql {
         Connection connection = null;
  
         try {
-            Thread.sleep(3000);
             Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection("jdbc:mysql://10.0.10.3:3306/myDB", "mbobel", "password");
  
