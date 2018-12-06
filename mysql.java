@@ -1,5 +1,6 @@
 import java.sql.*;
 import java.util.Scanner;
+import java.lang.Thread;
  
 class MySql {
     public static void main(String args[]) {
@@ -8,18 +9,19 @@ class MySql {
         Connection connection = null;
  
         try {
+            Thread.sleep(3000);
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://pwcho2018-83723:3306/myDB", "mbobel", "password");
+            connection = DriverManager.getConnection("jdbc:mysql://10.0.10.3:3306/myDB", "mbobel", "password");
  
             String createTable = "CREATE TABLE IF NOT EXISTS cars (brand VARCHAR(20), model VARCHAR(20), color VARCHAR(20))";
  
             statement = connection.createStatement();
             statement.executeUpdate(createTable);
          
-            String insertQuery1 = "INSERT INTO cars VALUES('Seat', 'Leon','Red)";
+            String insertQuery1 = "INSERT INTO cars VALUES('Seat', 'Leon','Red')";
             statement.executeUpdate(insertQuery1);
          
-            String insertQuery2 = "INSERT INTO cars VALUES('Fiat', 'Multipla','Black')";
+            String insertQuery2 = "INSERT INTO cars VALUES('Audi', 'A4','Black')";
             statement.executeUpdate(insertQuery2);
          
             String insertQuery3 = "INSERT INTO cars VALUES('Ford', 'Fiesta','Green')";
