@@ -15,6 +15,15 @@ class MySql {
  
             statement = connection.createStatement();
             statement.executeUpdate(createTable);
+         
+            String insertQuery1 = "INSERT INTO cars VALUES('Seat', 'Leon','Red)";
+            statement.executeUpdate(insertQuery1);
+         
+            String insertQuery2 = "INSERT INTO cars VALUES('Fiat', 'Multipla','Black')";
+            statement.executeUpdate(insertQuery2);
+         
+            String insertQuery3 = "INSERT INTO cars VALUES('Ford', 'Fiesta','Green')";
+            statement.executeUpdate(insertQuery3);
  
             Scanner in = new Scanner(System.in);
  
